@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" xintegrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css"> <!-- Asegúrate de que este archivo exista -->
+    <title>Visión - DieCastCars</title>
+    <style>
+        /* Estilos específicos para esta página, si no los pones en style.css */
+        .vision-hero {
+            /* Imagen de fondo relacionada con carros a escala o un futuro automotriz */
+            background: url('https://placehold.co/1920x400/1E90FF/FFFFFF?text=El+Futuro+de+los+Modelos+a+Escala') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .vision-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .vision-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 30px auto;
+            text-align: justify;
+        }
+        .card-img-top-custom {
+            height: 200px; /* Altura fija para las imágenes de las cartas */
+            object-fit: cover; /* Para que las imágenes cubran el espacio sin distorsionarse */
+        }
+        .card-title-custom {
+            min-height: 50px; /* Altura mínima para los títulos de las cartas */
+        }
+        .card-text-custom {
+            min-height: 100px; /* Altura mínima para el texto de las cartas */
+        }
+        .custom-card-wrapper {
+            margin-bottom: 30px; /* Espacio entre las filas de cartas */
+        }
+
+        /* Estilos para el carrusel */
+        .carousel-item img {
+            max-height: 500px; /* Altura máxima para las imágenes del carrusel */
+            width: auto; /* Ancho automático para mantener la proporción */
+            display: block;
+            margin: auto; /* Centrar la imagen dentro del carrusel */
+            object-fit: contain; /* Ajusta la imagen sin recortarla dentro del contenedor */
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para el texto del carrusel */
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        /* Estilos para el footer - Asegúrate de que las columnas estén bien definidas */
+        footer .col.lg-3, footer .col.xl-3 { /* Corrección de selectores */
+            margin-bottom: 20px; /* Espacio entre columnas en pantallas pequeñas */
+        }
+        footer h3 {
+            margin-bottom: 15px;
+            color: #f8f9fa; /* Color para los títulos del footer */
+        }
+        footer p, footer .lblhorarios, footer .linktext, footer label {
+            color: #ced4da; /* Color para el texto general del footer */
+        }
+        footer .linktext {
+            display: block; /* Para que los enlaces de interés se muestren en líneas separadas */
+            margin-bottom: 5px;
+            text-decoration: none;
+        }
+        footer .linktext:hover {
+            color: #ffffff;
+        }
+        footer {
+            background-color: #343a40; /* Fondo oscuro para el footer */
+            color: white;
+            padding: 40px 0;
+        }
+
+        /* Media Queries para responsividad (ejemplo, puedes añadir más) */
+        @media (max-width: 767.98px) {
+            .vision-hero h1 {
+                font-size: 2.5rem;
+            }
+            .vision-text {
+                font-size: 1rem;
+            }
+            footer .col-12 {
+                text-align: center;
+            }
+            footer h3 {
+                margin-top: 25px;
+            }
+            .carousel-item img {
+                max-height: 300px; /* Ajuste para móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Navbar oscuro para contrastar -->
+        <a class="navbar-brand" href="./index.html">DieCastCars</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto"> <!-- ml-auto para alinear a la derecha -->
+                <li class="nav-item">
+                    <a class="nav-link" href="./mision.html">Misión</a>
+                </li>
+                <li class="nav-item active"> <!-- active para la página actual -->
+                    <a class="nav-link" href="./vision.html">Visión <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contactenos.html">Contáctenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./registro.html">Registro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section para la Visión -->
+    <section class="vision-hero">
+        <div class="container">
+            <h1>Nuestra Visión</h1>
+            <p>Construyendo el futuro del coleccionismo de modelos a escala</p>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <p class="vision-text">
+                    En **DieCastCars**, visualizamos un futuro donde el coleccionismo de vehículos a escala trascienda las fronteras tradicionales, conectando a entusiastas de todas las generaciones y rincones del mundo. Aspiramos a ser el epicentro global de la pasión por el modelismo, reconocidos por nuestra innovación, la calidad inigualable de nuestros productos y nuestra capacidad para anticipar y satisfacer las necesidades de la comunidad.
+                </p>
+                <p class="vision-text">
+                    Seremos pioneros en la adopción de tecnologías emergentes, como la visualización 3D interactiva y las experiencias de realidad aumentada, para enriquecer la forma en que los coleccionistas interactúan con sus modelos. Nuestra visión es crear no solo un catálogo, sino un universo dinámico donde cada pieza cuente una historia, y donde la comunidad pueda compartir, aprender y celebrar su amor por los automóviles a escala. DieCastCars será sinónimo de excelencia, innovación y el punto de encuentro definitivo para el coleccionismo de mañana.
+                </p>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <h2 class="text-center mb-4">Un Vistazo a Nuestro Futuro</h2>
+        <!-- Carrusel de Imágenes -->
+        <div id="visionCarousel" class="carousel slide mb-5" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#visionCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#visionCarousel" data-slide-to="1"></li>
+                <li data-target="#visionCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- [Image of 3D-rendered futuristic model cars in a clean, brightly lit showroom setting. Several sleek, highly detailed diecast cars are arranged on minimalist pedestals, showcasing their intricate designs. The lighting emphasizes reflections on the polished surfaces, highlighting the precision of the models. The background is simple and uncluttered, suggesting a high-tech display environment. The overall image quality is very sharp and clear, making the models appear almost real, emphasizing craftsmanship and innovation. (Image of 3D-rendered futuristic model cars in a clean, brightly lit showroom setting.)] -->
+                    <img src="https://placehold.co/800x400/A020F0/FFFFFF?text=Modelos+3D+Interactivos" class="d-block w-100" alt="Modelos 3D Interactivos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Experiencias 3D Inmersivas</h5>
+                        <p>Visualiza cada detalle con tecnología de vanguardia.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- [Image of a diverse group of people from different ages and backgrounds interacting joyfully around a display of diecast cars. They are smiling, pointing at the models, and engaging in conversation. The setting is bright and welcoming, like a convention or a community event. The atmosphere is vibrant and inclusive, emphasizing shared passion and connection. (Image of a diverse group of people interacting joyfully around a display of diecast cars.)] -->
+                    <img src="https://placehold.co/800x400/228B22/FFFFFF?text=Comunidad+Global" class="d-block w-100" alt="Comunidad Global">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Conectando Coleccionistas Globalmente</h5>
+                        <p>Únete a nuestra creciente comunidad mundial de entusiastas.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- [Image of a highly detailed, perfect diecast car being carefully placed into a protective display case by a gloved hand. The car model is exceptionally well-crafted, with intricate paintwork and realistic components. The background is a sophisticated studio environment with soft lighting that accentuates the car's quality. The overall impression is one of precision, care, and high-quality craftsmanship, reflecting the dedication to excellence. (Image of a highly detailed, perfect diecast car being carefully placed into a protective display case by a gloved hand.)] -->
+                    <img src="https://placehold.co/800x400/FFD700/000000?text=Calidad+Inigualable" class="d-block w-100" alt="Calidad Inigualable">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Excelencia en Cada Detalle</h5>
+                        <p>Nuestro compromiso con la perfección y la artesanía.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#visionCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#visionCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <h2 class="text-center mb-4">Pilares de Nuestro Futuro</h2>
+        <div class="row">
+            <!-- Carta 1: Innovación Tecnológica -->
+            <div class="col-12 col-md-6 col-lg-4 custom-card-wrapper">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/400x200/6A5ACD/FFFFFF?text=Innovacion+Tecnologica" class="card-img-top-custom" alt="Innovación Tecnológica">
+                    <div class="card-body">
+                        <h5 class="card-title card-title-custom text-purple">Innovación Tecnológica</h5>
+                        <p class="card-text card-text-custom">
+                            Liderar la integración de tecnologías avanzadas como la realidad aumentada y la visualización 3D para transformar la experiencia del coleccionista.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carta 2: Alcance Global y Comunidad -->
+            <div class="col-12 col-md-6 col-lg-4 custom-card-wrapper">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/400x200/20B2AA/FFFFFF?text=Comunidad+Global" class="card-img-top-custom" alt="Alcance Global y Comunidad">
+                    <div class="card-body">
+                        <h5 class="card-title card-title-custom text-teal">Conexión Global y Comunidad</h5>
+                        <p class="card-text card-text-custom">
+                            Unir a coleccionistas de todo el mundo, creando una vibrante comunidad donde la pasión por los modelos a escala no tenga límites geográficos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carta 3: Calidad y Exclusividad -->
+            <div class="col-12 col-md-6 col-lg-4 custom-card-wrapper">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/400x200/D2B4DE/FFFFFF?text=Calidad+Exclusividad" class="card-img-top-custom" alt="Calidad y Exclusividad">
+                    <div class="card-body">
+                        <h5 class="card-title card-title-custom text-secondary">Estándares de Calidad y Exclusividad</h5>
+                        <p class="card-text card-text-custom">
+                            Mantener nuestro compromiso con la excelencia, ofreciendo solo los modelos más detallados y exclusivos que superen las expectativas de nuestros clientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <h3>Quiénes Somos</h3>
+                    <p>En DieCastCars, somos coleccionistas de corazón, dedicados a traer la historia y la emoción de los automóviles a tu hogar en forma de modelos a escala de alta calidad.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <h3>Horarios</h3>
+                    <div class="lblhorarios"> Lunes 8:00 am - 5:00 pm </div>
+                    <div class="lblhorarios"> Martes 8:00 am - 5:00 pm </div>
+                    <div class="lblhorarios"> Miércoles 8:00 am - 5:00 pm </div>
+                    <div class="lblhorarios"> Jueves 8:00 am - 5:00 pm </div>
+                    <div class="lblhorarios"> Viernes 8:00 am - 5:00 pm </div>
+                    <div class="lblhorarios"> Sábado 8:00 am - 1:00 pm </div> <!-- Horario de sábado corregido -->
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <h3>Enlaces de Interés</h3>
+                    <a href="./mision.html" class="linktext">Misión</a>
+                    <a href="./vision.html" class="linktext">Visión</a>
+                    <a href="./contactenos.html" class="linktext">Contáctenos</a>
+                    <a href="./registro.html" class="linktext">Registro</a>
+                    <a href="./login.html" class="linktext">Login</a>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <h3>Suscríbete</h3>
+                    <div class="form-group">
+                        <label for="suscribete">Email</label>
+                        <input type="email" class="form-control" id="suscribete" placeholder="nombre@dominio.com"> <!-- type="email" para validación básica -->
+                    </div>
+                    <button type="button" class="btn btn-success w-100">Suscríbete</button> <!-- w-100 para ancho completo -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" xintegrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
