@@ -2,19 +2,21 @@
 <html lang="es">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        xintegrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title>Misión - DieCastCars</title>
+    <link rel="stylesheet" href="./style.css"> <!-- Asegúrate de que este archivo exista -->
+    <title>Visión - DieCastCars</title>
     <style>
         /* Estilos específicos para esta página, si no los pones en style.css */
-        .mission-hero {
+        .vision-hero {
+            /* Imagen de fondo relacionada con carros a escala o un futuro automotriz */
             background: url('./assets/wallpaper.avif') no-repeat center center;
-            /* Cambia esta URL por una imagen real de cabecera */
             background-size: cover;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -22,12 +24,12 @@
             text-align: center;
         }
 
-        .mission-hero h1 {
+        .vision-hero h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
         }
 
-        .mission-text {
+        .vision-text {
             font-size: 1.2rem;
             line-height: 1.8;
             max-width: 800px;
@@ -56,6 +58,50 @@
             margin-bottom: 30px;
             /* Espacio entre las filas de cartas */
         }
+
+        /* Estilos para el carrusel */
+        .carousel-item img {
+            max-height: 500px;
+            /* Altura máxima para las imágenes del carrusel */
+            width: auto;
+            /* Ancho automático para mantener la proporción */
+            display: block;
+            margin: auto;
+            /* Centrar la imagen dentro del carrusel */
+            object-fit: contain;
+            /* Ajusta la imagen sin recortarla dentro del contenedor */
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Fondo semi-transparente para el texto del carrusel */
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        /* Media Queries para responsividad (ejemplo, puedes añadir más) */
+        @media (max-width: 767.98px) {
+            .vision-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .vision-text {
+                font-size: 1rem;
+            }
+
+            footer .col-12 {
+                text-align: center;
+            }
+
+            footer h3 {
+                margin-top: 25px;
+            }
+
+            .carousel-item img {
+                max-height: 300px;
+                /* Ajuste para móviles */
+            }
+        }
     </style>
 </head>
 
@@ -83,77 +129,61 @@
         </div>
     </nav>
 
-    <section class="mission-hero">
+    <!-- Hero Section para la Visión -->
+    <section class="vision-hero">
         <div class="container">
-            <h1>Nuestra Misión</h1>
-            <p>Impulsando la pasión por los vehículos a escala</p>
+            <h1>Quienes Somos</h1>
+            <p>Somos un equipo de trabajo dedicado a la creación de contenidos de alta calidad para nuestro cliente.</p>
+
         </div>
+
     </section>
 
     <div class="container mt-5">
         <div class="row">
             <div class="col-12">
-                <p class="mission-text">
-                    En **DieCastCars**, nuestra misión es ser el destino líder para entusiastas y coleccionistas de
-                    vehículos a escala. Nos dedicamos a ofrecer una experiencia inigualable a través de una cuidadosa
-                    selección de modelos de alta calidad, que capturan la esencia y el detalle de los automóviles más
-                    icónicos de la historia. Buscamos fomentar la pasión por el modelismo, construyendo una comunidad
-                    donde el valor, la historia y la artesanía de cada pieza sean apreciados.
+                <p class="vision-text">
+                    En <b>DieCastCars</b>, somos una tienda especializada en la venta de modelos a escala exclusivos y
+                    de alta
+                    calidad, dedicados a los apasionados del coleccionismo y los amantes de los automóviles. Nuestro
+                    objetivo es ofrecer a nuestros clientes una experiencia única al adquirir piezas que no solo son
+                    modelos a escala, sino auténticas obras de arte.
                 </p>
-                <p class="mission-text">
-                    Nos comprometemos a proporcionar un servicio al cliente excepcional, garantizando que cada
-                    interacción sea tan gratificante como la adquisición de una nueva pieza para tu colección. A través
-                    de la innovación y la curación experta, DieCastCars se esfuerza por conectar a los coleccionistas
-                    con sus modelos soñados y por inspirar a nuevas generaciones a descubrir la fascinación por el mundo
-                    de los carros a escala.
+                <p class="vision-text">
+                    Contamos con una extensa colección de vehículos a escala 1:18, 1:24, y otras medidas, fabricados con
+                    los mejores materiales y con un nivel de detalle impresionante. Desde clásicos de la historia
+                    automotriz hasta modelos modernos, cada pieza está cuidadosamente seleccionada para garantizar su
+                    calidad, autenticidad y valor a largo plazo.
+                </p>
+                <p class="vision-text">
+                    Nos enorgullece ofrecer ediciones limitadas que solo unos pocos afortunados podrán poseer,
+                    asegurando que nuestros clientes cuenten con piezas exclusivas para sus colecciones. Además, cada
+                    modelo está numerado y certificado, lo que refuerza su valor como inversión y lo convierte en un
+                    objeto único.
+                </p>
+                <p class="vision-text">
+                    En <b>DieCastCars</b>, entendemos la importancia de cada pieza en una colección, y es por eso que
+                    nos
+                    comprometemos a proporcionar un servicio excepcional, brindando a nuestros clientes asesoría
+                    personalizada, garantizando la entrega oportuna y ofreciendo una experiencia de compra segura y
+                    confiable.
+                </p>
+                <p class="vision-text">
+                    Únete a nosotros en este emocionante viaje por el mundo del coleccionismo de modelos a escala.
+                    ¡Explora nuestras colecciones y asegura tu pieza única hoy mismo!
+                </p>
+                <p class="vision-text">
+                    Seremos pioneros en la adopción de tecnologías emergentes, como la visualización 3D interactiva y
+                    las experiencias de realidad aumentada, para enriquecer la forma en que los coleccionistas
+                    interactúan con sus modelos. Nuestra visión es crear no solo un catálogo, sino un universo dinámico
+                    donde cada pieza cuente una historia, y donde la comunidad pueda compartir, aprender y celebrar su
+                    amor por los automóviles a escala. DieCastCars será sinónimo de excelencia, innovación y el punto de
+                    encuentro definitivo para el coleccionismo de mañana.
                 </p>
             </div>
         </div>
 
-        <hr class="my-5">
 
-        <h2 class="text-center mb-4">Lo que nos impulsa</h2>
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 custom-card-wrapper">
-                <div class="card h-100 shadow-sm">
-                    <img src="./assets/huayra-Photoroom.png" class="card-img-top-custom" alt="Calidad y Detalle">
-                    <div class="card-body">
-                        <h5 class="card-title card-title-custom text-chocolate">Calidad y Detalle Excepcional</h5>
-                        <p class="card-text card-text-custom">
-                            Seleccionamos meticulosamente cada modelo para asegurar la máxima calidad y fidelidad a los
-                            vehículos originales. Cada curva, cada emblema y cada componente es una obra de arte en
-                            miniatura.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 custom-card-wrapper">
-                <div class="card h-100 shadow-sm">
-                    <img src="./assets/fury1.jpg" class="card-img-top-custom" alt="Pasión por el Coleccionismo">
-                    <div class="card-body">
-                        <h5 class="card-title card-title-custom text-chocolate">Fomentando la Pasión</h5>
-                        <p class="card-text card-text-custom">
-                            Entendemos y compartimos el entusiasmo por el coleccionismo. Nuestra meta es inspirar y
-                            conectar a los aficionados, creando un espacio donde la historia automotriz cobra vida.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 custom-card-wrapper">
-                <div class="card h-100 shadow-sm">
-                    <img src="./assets/collection-american.PNG" class="card-img-top-custom" alt="Comunidad y Servicio">
-                    <div class="card-body">
-                        <h5 class="card-title card-title-custom text-chocolate">Comunidad y Servicio al Cliente</h5>
-                        <p class="card-text card-text-custom">
-                            Más allá de la venta, construimos una comunidad. Nuestro compromiso es brindar un servicio
-                            excepcional, apoyando a nuestros clientes en cada paso de su viaje coleccionista.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <footer>
@@ -204,11 +234,13 @@
     </footer>
 
 
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        xintegrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        xintegrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
 
 </body>

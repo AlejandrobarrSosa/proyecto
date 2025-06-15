@@ -1,5 +1,4 @@
-nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {}
 
 nav.navbar {
     background-color: #383838 !important;
@@ -10,7 +9,9 @@ nav.navbar a {
 
 }
 
-button.navbar-toggler {background: white;}
+button.navbar-toggler {
+    background: white;
+}
 
 footer {
     background: #121212d6;
@@ -23,6 +24,7 @@ footer h3 {
     margin-top: 19px;
     margin-bottom: 20px;
     font-style: italic;
+    color: chocolate;
 }
 
 a.linktext {
@@ -33,19 +35,19 @@ a.linktext {
 }
 
 .mitarjeta {
-    border: solid 2px #ebebeb;
+    border: solid 2px #b1b1b1;
     padding: 8px;
     text-align: center;
     border-radius: 25px;
     margin-bottom: 38px;
     margin-top: 38px;
-    background: #00BCD4;
+    background: #FFFFFF;
     cursor: pointer;
     transition: 0.3s;
 }
 
-img {
-    margin-top: 42px;
+.section_main {
+    margin: 42px 0;
 }
 
 .lblnombre {
@@ -60,16 +62,24 @@ img {
     margin-bottom: 7px;
     font-weight: 600;
     font-style: italic;
-    color: chartreuse;
+    color: #797979;
 }
 
-.mitarjeta:hover {padding: 0px;}
+.mitarjeta:hover {
+    padding: 0px;
+    box-shadow: #9c9c9c 0 0 10px;
+}
+
+.mitarjeta:hover .lblprofesion {
+    color: black;
+    padding: 0 8px 8px 8px;
+}
 
 
 h2 {
     margin-bottom: 15px;
     margin-top: 38px;
-    color: aquamarine;
+    color: chocolate;
 }
 
 
@@ -80,29 +90,34 @@ h2 {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    background-color: #f8f9fa; /* Color de fondo suave */
+    background-color: #f8f9fa;
+    /* Color de fondo suave */
 }
 
 /* Estilos para el navbar */
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
-    color: #007bff !important; /* Color principal de la marca */
+    color: #007bff !important;
+    /* Color principal de la marca */
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff !important; /* Color de los enlaces del navbar */
+    color: #ffffff !important;
+    /* Color de los enlaces del navbar */
     margin-right: 15px;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #cccccc !important; /* Color al pasar el ratón */
+    color: #cccccc !important;
+    /* Color al pasar el ratón */
 }
 
 /* Estilos para el hero section de la misión (Mision.html) */
 .mission-hero {
     /* Fondo definido en el HTML <style> para esta sección */
-    min-height: 300px; /* Altura mínima para la sección hero */
+    min-height: 300px;
+    /* Altura mínima para la sección hero */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,6 +141,21 @@ body {
     color: #555;
 }
 
+.text-white {
+    color: white;
+    font-weight: bold;
+}
+
+.text-black {
+    color: black;
+    font-weight: bold;
+}
+
+.text-yellow {
+    color: #d99626;
+    font-weight: bold;
+}
+
 /* Estilos para las cartas de "Lo que nos impulsa" */
 .card {
     border: none;
@@ -136,7 +166,7 @@ body {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-top-custom {
@@ -154,59 +184,6 @@ body {
 
 .card-text-custom {
     color: #666;
-}
-
-/* Estilos para el footer */
-footer {
-    background-color: #212529; /* Fondo oscuro */
-    padding: 50px 0;
-    color: #f8f9fa; /* Texto claro */
-}
-
-footer h3 {
-    color: #007bff; /* Títulos del footer en color primario */
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-}
-
-footer p,
-footer .lblhorarios,
-footer .linktext,
-footer label {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 8px;
-}
-
-footer .linktext {
-    display: block;
-    color: #adb5bd; /* Enlaces en gris claro */
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-footer .linktext:hover {
-    color: #ffffff; /* Blanco al pasar el ratón */
-}
-
-footer .form-control {
-    background-color: #343a40;
-    border: 1px solid #495057;
-    color: #f8f9fa;
-}
-
-footer .form-control::placeholder {
-    color: #ced4da;
-}
-
-footer .btn-success {
-    background-color: #28a745;
-    border-color: #28a745;
-}
-
-footer .btn-success:hover {
-    background-color: #218838;
-    border-color: #1e7e34;
 }
 
 /* Media Queries para responsividad (ejemplo, puedes añadir más) */
@@ -214,166 +191,102 @@ footer .btn-success:hover {
     .mission-hero h1 {
         font-size: 2.5rem;
     }
+
     .mission-text {
         font-size: 1rem;
     }
+
     footer .col-12 {
         text-align: center;
     }
+
     footer h3 {
         margin-top: 25px;
     }
+}
 
-    /*CSS-mision*/
+/*CSS-mision*/
 
 /* Estilos generales para el cuerpo del documento */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    background-color: #f8f9fa; /* Color de fondo suave */
+    background-color: #f8f9fa;
+    /* Color de fondo suave */
 }
 
 /* Estilos para el navbar */
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
-    color: #007bff !important; /* Color principal de la marca */
+    color: #007bff !important;
+    /* Color principal de la marca */
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff !important; /* Color de los enlaces del navbar */
+    color: #ffffff !important;
+    /* Color de los enlaces del navbar */
     margin-right: 15px;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #cccccc !important; /* Color al pasar el ratón */
+    color: #cccccc !important;
+    /* Color al pasar el ratón */
 }
 
 /* Estilos para el hero section de la misión (Mision.html) y Vision (Vision.html) */
-.mission-hero, .vision-hero {
-    min-height: 300px; /* Altura mínima para la sección hero */
+.mission-hero,
+.vision-hero {
+    min-height: 300px;
+    /* Altura mínima para la sección hero */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.mission-hero h1, .vision-hero h1 {
+.mission-hero h1,
+.vision-hero h1 {
     color: white;
     font-weight: bold;
 }
 
-.mission-hero p, .vision-hero p {
+.mission-hero p,
+.vision-hero p {
     color: white;
     font-size: 1.1rem;
 }
 
+.text-chocolate {
+    color: chocolate;
+}
+
 /* Estilos para el texto principal de la misión y visión */
-.mission-text, .vision-text {
+.mission-text,
+.vision-text {
     font-size: 1.15rem;
     line-height: 1.7;
     margin-bottom: 25px;
     color: #555;
 }
 
-/* Estilos para las cartas de "Lo que nos impulsa" y "Pilares de Nuestro Futuro" */
-.card {
-    border: none;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.card-img-top-custom {
-    border-bottom: 1px solid #eee;
-}
-
-.card-body {
-    padding: 25px;
-}
-
-.card-title-custom {
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.card-text-custom {
-    color: #666;
-}
-
-/* Colores de texto para títulos de cartas específicos */
-.text-purple { color: #6A5ACD !important; } /* Para Innovación Tecnológica */
-.text-teal { color: #20B2AA !important; } /* Para Conexión Global y Comunidad */
-.text-secondary { color: #6c757d !important; } /* Para Estándares de Calidad y Exclusividad */
-
-/* Estilos para el footer */
-footer {
-    background-color: #212529; /* Fondo oscuro */
-    padding: 50px 0;
-    color: #f8f9fa; /* Texto claro */
-}
-
-footer h3 {
-    color: #007bff; /* Títulos del footer en color primario */
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-}
-
-footer p,
-footer .lblhorarios,
-footer .linktext,
-footer label {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 8px;
-}
-
-footer .linktext {
-    display: block;
-    color: #adb5bd; /* Enlaces en gris claro */
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-footer .linktext:hover {
-    color: #ffffff; /* Blanco al pasar el ratón */
-}
-
-footer .form-control {
-    background-color: #343a40;
-    border: 1px solid #495057;
-    color: #f8f9fa;
-}
-
-footer .form-control::placeholder {
-    color: #ced4da;
-}
-
-footer .btn-success {
-    background-color: #28a745;
-    border-color: #28a745;
-}
-
-footer .btn-success:hover {
-    background-color: #218838;
-    border-color: #1e7e34;
-}
 
 /* Media Queries para responsividad (ejemplo, puedes añadir más) */
 @media (max-width: 767.98px) {
-    .mission-hero h1, .vision-hero h1 {
+
+    .mission-hero h1,
+    .vision-hero h1 {
         font-size: 2.5rem;
     }
-    .mission-text, .vision-text {
+
+    .mission-text,
+    .vision-text {
         font-size: 1rem;
     }
+
     footer .col-12 {
         text-align: center;
     }
+
     footer h3 {
         margin-top: 25px;
     }
